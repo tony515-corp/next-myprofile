@@ -40,3 +40,121 @@ a {
 .error {
   color:coral;
 }
+
+.hero-2-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  max-width: 100%;
+  min-height: 420px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.hero-2-img::before,
+.hero-2-img::after {
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  width: 420px;
+  height: 420px;
+}
+
+.hero-2-img::before {
+  transform: translate(-50%, -50%);
+  animation: hero-ring-float 5s infinite ease-out;
+}
+
+.hero-2-img::after {
+  transform: translate(-46%, -54%);
+  opacity: 0.55;
+}
+
+.portrait-circle {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.portrait-circle img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.portrait-circle--hero {
+  width: 340px;
+  height: 340px;
+  z-index: 2;
+  border: 6px solid rgba(255, 255, 255, 0.28);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.portrait-circle--about {
+  width: 420px;
+  height: 420px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 8px solid #fff;
+  box-shadow: 0 0 0 6px rgba(196, 3, 66, 0.22);
+}
+
+.about-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-left .about-pic img {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.portrait-circle--side {
+  width: 168px;
+  height: 168px;
+  margin: 0 auto;
+  border: 4px solid rgba(196, 3, 66, 0.35);
+}
+
+.feed-bio img {
+  border-radius: 50% !important;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+@keyframes hero-ring-float {
+  0%,
+  100% {
+    transform: translate(-56%, -58%);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1199px) {
+  .hero-2-img {
+    width: 300px;
+    min-height: 300px;
+    margin: 2rem auto 4rem;
+  }
+
+  .hero-2-img::before,
+  .hero-2-img::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  .portrait-circle--hero {
+    width: 240px;
+    height: 240px;
+  }
+
+  .portrait-circle--about {
+    width: 280px;
+    height: 280px;
+  }
+}

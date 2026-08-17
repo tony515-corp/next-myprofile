@@ -1,60 +1,61 @@
-import Image from 'next/image';
+import Portrait from "../../portrait";
+import { site } from "../../../data/site";
 
 export default function SideMenu() {
-    return (
-        <div className="side-menu">
-            <div className="menu-tab">
-                <div id="one"></div>
-                <div id="two"></div>
-                <div id="three"></div>
-            </div>
-            <div className="menu-hide">
-                <div className="side-about">
-                    <Image src="/img/tony/new_position.png"
-                        layout='fixed' width={240} height={160}
-                        alt="thumb" />
-                    <h5 className="about-sub-title mt-30">
-                        Finding New Position
-                    </h5>
-                    <p className=" mb-0">
-                        Hey,  
-                        My schedule is flexible, and I would be available to work at your convenience. I hope to schedule an interview at a mutually convenient time. I look forward to speaking with you.
-                        Thank you for your consideration.
-                    </p>
-                </div>
-                <div className="side-social-content mt-30">
-                    <div className="side-address mb-30">
-                        <div className="side-addr-box">
-                            <div className="side-addr-icon">
-                                <i className="fas fa-phone"></i>
-                            </div>
-                            <div className="side-addr-desc">
-                                <span>+1 702 987 9724</span>
-                            </div>
-                        </div>
-                        <div className="side-addr-box">
-                            <div className="side-addr-icon">
-                                <i className="fas fa-envelope"></i>
-                            </div>
-                            <div className="contact-addr-desc">
-                                <span>tony.fullstack.dev@gmail.com</span> 
-                            </div>
-                        </div>
-                        <div className="side-addr-box">
-                            {/* <div className="side-addr-icon">
-                                <i className="fas fa-map-marker-alt"></i>
-                            </div> */}
-                            {/* <div className="side-addr-desc">
-                                <span> 30 Lytton Blvd Toronto, ON M4R 1L1, Canada</span> 
-                            </div> */}
-                        </div>
-                    </div>
-                    <ul className="side-social">
-                        <li><a href="http://github.com/tony-fullstack-515"><i className="fab fa-git"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/tony-zou-88397519a/"><i className="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+  return (
+    <div className="side-menu">
+      <div className="menu-tab">
+        <div id="one" />
+        <div id="two" />
+        <div id="three" />
+      </div>
+      <div className="menu-hide">
+        <div className="side-about">
+          <Portrait
+            className="portrait-circle--side"
+            alt={`${site.name} is open to new roles`}
+          />
+          <h5 className="about-sub-title mt-30">Finding New Position</h5>
+          <p className=" mb-0">
+            Hey, My schedule is flexible, and I would be available to work at
+            your convenience. I hope to schedule an interview at a mutually
+            convenient time. I look forward to speaking with you. Thank you for
+            your consideration.
+          </p>
         </div>
-    )
+        <div className="side-social-content mt-30">
+          <div className="side-address mb-30">
+            <div className="side-addr-box">
+              <div className="side-addr-icon">
+                <i className="fas fa-phone" />
+              </div>
+              <div className="side-addr-desc">
+                <span>{site.phone}</span>
+              </div>
+            </div>
+            <div className="side-addr-box">
+              <div className="side-addr-icon">
+                <i className="fas fa-envelope" />
+              </div>
+              <div className="contact-addr-desc">
+                <span>{site.emails[0]}</span>
+              </div>
+            </div>
+          </div>
+          <ul className="side-social">
+            <li>
+              <a href={site.github} target="_blank" rel="noreferrer">
+                <i className="fab fa-git" />
+              </a>
+            </li>
+            <li>
+              <a href={site.linkedin} target="_blank" rel="noreferrer">
+                <i className="fab fa-linkedin-in" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }

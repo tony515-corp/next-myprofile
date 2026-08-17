@@ -1,0 +1,86 @@
+export const projectFilters = [
+  { rel: "all", filter: "all", label: "All" },
+  { rel: "web", filter: ".web", label: "Full Development" },
+  { rel: "flyers", filter: ".flyers", label: "Updated & Upgraded Site" },
+  { rel: "graphic", filter: ".graphic", label: "Bug & Minor Issue Fix" },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Jiu Xian",
+    caption: "China Famous Ecommerce Website",
+    image: "/img/tony/portfolio/jiuxian.png",
+    classes: "web graphic",
+  },
+  {
+    id: 2,
+    title: "SkyQuota",
+    caption: "Medium Size CRM System",
+    image: "/img/tony/portfolio/skyquota.png",
+    classes: "flyers wordpress",
+  },
+  {
+    id: 3,
+    title: "Chefahome",
+    caption: "Chef Booking System",
+    image: "/img/tony/portfolio/chefahome.png",
+    classes: "web illus",
+  },
+  {
+    id: 4,
+    title: "Wejunket",
+    caption: "Virtual Tour and Game System",
+    image: "/img/tony/portfolio/wejunket1.png",
+    classes: "web illus",
+  },
+  {
+    id: 5,
+    title: "CMS for Wejunket System",
+    caption: "Web Design",
+    image: "/img/tony/portfolio/cms-wejunket.png",
+    classes: "web",
+  },
+  {
+    id: 6,
+    title: "FClub",
+    caption: "China Ecommerce Website",
+    image: "/img/tony/portfolio/fclub.webp",
+    classes: "bcards",
+  },
+  {
+    id: 7,
+    title: "Global Gold Post",
+    caption: "US Blog Website",
+    image: "/img/tony/portfolio/globalgoldpost.png",
+    classes: "flyers wordpress",
+  },
+  {
+    id: 8,
+    title: "Jing Dong",
+    caption: "China Ecommerce Website",
+    image: "/img/tony/portfolio/jngdong.png",
+    classes: "flyers wordpress",
+  },
+  {
+    id: 9,
+    title: "Locallolo",
+    caption: "US Business Advertising Website",
+    image: "/img/tony/portfolio/locallolo.png",
+    classes: "flyers wordpress",
+  },
+  {
+    id: 10,
+    title: "PayStubsNow",
+    caption: "US Tax Calculation System",
+    image: "/img/tony/portfolio/paystubsnow.png",
+    classes: "flyers wordpress",
+  },
+  {
+    id: 11,
+    title: "Stoprap",
+    caption: "France Stoprap Admin Portal",
+    image: "/img/tony/portfolio/stoprat-admin.png",
+    classes: "web illus",
+  },
+];
