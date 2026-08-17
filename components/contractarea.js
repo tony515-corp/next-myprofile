@@ -51,16 +51,15 @@ export default function ContractArea({ children }) {
                 <div className="col-xl-4 col-md-6 col-lg-6">
                   <div className="contact-addr-box">
                     <div className="contact-addr-icon">
-                      <i className="fas fa-phone" />
+                      <i className="fab fa-telegram-plane" />
                     </div>
                     <div className="contact-addr-desc">
-                      <h4>Skype Address</h4>
-                      {site.skype.map((handle) => (
-                        <span key={handle}>
-                          {handle}
-                          <br />
-                        </span>
-                      ))}
+                      <h4>Telegram</h4>
+                      <span>
+                        <a href={site.telegramUrl} target="_blank" rel="noreferrer">
+                          {site.telegram}
+                        </a>
+                      </span>
                     </div>
                   </div>
                 </div>

@@ -135,6 +135,32 @@ a {
   }
 }
 
+@media (min-width: 992px) {
+  .hero-single-2 {
+    padding-top: 11rem;
+  }
+
+  .hero-single-2 .hero-content-2 {
+    padding-top: 1.5rem;
+  }
+
+  .contact-area.de-pt {
+    padding-top: 7rem;
+  }
+
+  .contact-area .site-title.mb-60 {
+    margin-bottom: 3rem;
+  }
+
+  .menu-hide {
+    padding-top: 4rem;
+  }
+
+  .side-social-content.mt-30 {
+    margin-top: 1.5rem;
+  }
+}
+
 @media (max-width: 1199px) {
   .hero-2-img {
     width: 300px;
