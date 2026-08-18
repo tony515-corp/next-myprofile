@@ -2,7 +2,8 @@ import Head from "next/head";
 import Layout from "../components/layouts/layouts";
 import HeroSection from "../components/hero.section";
 import AboutArea from "../components/aboutarea";
-import SkillArea from "../components/skillarea";
+import HowWeWorkArea from "../components/howweworkarea";
+import CareerArea from "../components/careerarea";
 import CounterArea from "../components/counterarea";
 import ProjectArea from "../components/projectarea";
 import FeedArea from "../components/feedarea";
@@ -21,7 +22,8 @@ export default function Home() {
       <main className="main">
         <HeroSection />
         <AboutArea />
-        <SkillArea />
+        <HowWeWorkArea />
+        <CareerArea />
         <CounterArea />
         <ProjectArea />
         <FeedArea />

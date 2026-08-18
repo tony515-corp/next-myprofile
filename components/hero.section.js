@@ -35,20 +35,10 @@ export default function HeroSection() {
                   </h2>
                   <div className="header-description">
                     <p>
-                      I think outside the box and come up with creative
-                      solutions in order to help our web application stand out
-                      from the competition.
+                      I lead teams and grow the company with clear process,
+                      honest communication, and a people-first approach to
+                      every partnership.
                     </p>
-                  </div>
-                  <div className="hero-btn">
-                    <a
-                      href={site.resume}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="tm-btn-1 demo2"
-                    >
-                      Download CV <i className="fas fa-chevron-right" />
-                    </a>
                   </div>
                 </div>
               </div>

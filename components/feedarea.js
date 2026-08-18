@@ -3,7 +3,7 @@ import { testimonials } from "../data/testimonials";
 
 export default function FeedArea() {
   return (
-    <div className="feed-area  de-padding">
+    <div id="clients" className="feed-area  de-padding">
       <div className="container">
         <div className="row">
           <div className="col-xl-8 offset-xl-2">

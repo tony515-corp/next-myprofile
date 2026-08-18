@@ -1,9 +1,9 @@
 export const site = {
   name: "Tony Zou",
-  title: "Tony Zou — Full Stack Developer",
+  title: "Tony Zou — Project Manager & CEO",
   description:
-    "Portfolio of Tony Zou, a full stack developer focused on PHP, Laravel, React, and Next.js.",
-  role: "Experienced Full Stack Developer",
+    "Tony Zou is a project manager and CEO building collaborative remote teams and long-term partnerships.",
+  role: "Project Manager & CEO",
   phone: "+1 (351) 252-6016",
   emails: ["tony.fullstack.dev@gmail.com"],
   telegram: "@tony_corp515",
@@ -14,16 +14,16 @@ export const site = {
   portrait: "/img/tony/jacket.jpg",
   nav: [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#skill", label: "Employment History & Skill" },
+    { href: "#about", label: "My Story" },
+    { href: "#how-we-work", label: "How We Work" },
+    { href: "#career", label: "Career" },
     { href: "#work", label: "Portfolio" },
     { href: "#contact", label: "Contact" },
   ],
   typedRoles: [
-    "Full Stack Developer",
+    "Strategic Project Manager",
+    "Dedicated CEO",
     "Team Player",
     "Clear Communicator",
-    "Time Management Master",
-    "Creative Thinking Developer",
   ],
 };
